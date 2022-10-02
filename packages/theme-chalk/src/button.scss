@@ -1,0 +1,43 @@
+@use "mixins/mixins.scss" as *;
+
+@include b(button) {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  .s-button-text {
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+  &:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+  }
+  
+  @include m('success') {
+    color: #fff;
+    background-color: #67c23a;
+    border-color: #67c23a;
+    &:hover {
+      background: #85ce61;
+      border-color: #85ce61;
+      color: #fff;
+    }
+  }
+}
+

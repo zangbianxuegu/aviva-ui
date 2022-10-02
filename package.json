@@ -1,0 +1,32 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C play dev",
+    "build:simple": "gulp -f packages/components/script/build/gulpfile.ts",
+    "publish:simple": "gulp -f packages/components/script/publish/gulpfile.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@simple/components": "workspace:^0.0.1",
+    "@simple/theme-chalk": "workspace:^0.0.1",
+    "@simple/utils": "workspace:^0.0.1"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.9",
+    "@types/gulp-autoprefixer": "^0.0.33",
+    "@types/gulp-sass": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0",
+    "sucrase": "^3.27.0",
+    "typescript": "^4.8.4",
+    "vite-plugin-dts": "^1.6.4",
+    "vue": "^3.2.40"
+  }
+}

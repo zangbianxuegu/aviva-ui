@@ -1,0 +1,11 @@
+{
+  "name": "@simple/components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "vite build"
+  },
+  "author": "choreau",
+  "license": "MIT"
+}
