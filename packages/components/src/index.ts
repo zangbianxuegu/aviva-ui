@@ -1,2 +1,2 @@
-export { default as Icon } from './icon'
-export { default as Button } from './button'
+export { default as SIcon } from './icon'
+export { default as SButton } from './button'

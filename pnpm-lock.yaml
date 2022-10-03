@@ -9,9 +9,12 @@ importers:
       '@simple/utils': workspace:^0.0.1
       '@types/gulp': ^4.0.9
       '@types/gulp-autoprefixer': ^0.0.33
+      '@types/gulp-clean-css': ^4.3.0
       '@types/gulp-sass': ^5.0.0
+      '@types/sass': ^1.43.1
       gulp: ^4.0.2
       gulp-autoprefixer: ^8.0.0
+      gulp-clean-css: ^4.3.0
       gulp-sass: ^5.1.0
       sass: ^1.55.0
       sucrase: ^3.27.0
@@ -25,9 +28,12 @@ importers:
     devDependencies:
       '@types/gulp': 4.0.9
       '@types/gulp-autoprefixer': 0.0.33
+      '@types/gulp-clean-css': 4.3.0
       '@types/gulp-sass': 5.0.0
+      '@types/sass': 1.43.1
       gulp: 4.0.2
       gulp-autoprefixer: 8.0.0_gulp@4.0.2
+      gulp-clean-css: 4.3.0
       gulp-sass: 5.1.0
       sass: 1.55.0
       sucrase: 3.27.0
@@ -190,6 +196,13 @@ packages:
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
     dev: true
 
+  /@types/clean-css/4.2.6:
+    resolution: {integrity: sha512-Ze1tf+LnGPmG6hBFMi0B4TEB0mhF7EiMM5oyjLDNPE9hxrPU0W+5+bHvO+eFPA+bt0iC1zkQMoU/iGdRVjcRbw==}
+    dependencies:
+      '@types/node': 18.7.23
+      source-map: 0.6.1
+    dev: true
+
   /@types/expect/1.20.4:
     resolution: {integrity: sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg==}
     dev: true
@@ -211,6 +224,13 @@ packages:
   /@types/gulp-autoprefixer/0.0.33:
     resolution: {integrity: sha512-FgunPm1uMroC/w9FCxtQhPPskR/WvnT+sNPxnyldwNXjq8K5ktzZAOqATyrYk0jTgae793uc+k5vsGV6Q+G7xA==}
     dependencies:
+      '@types/node': 18.7.23
+    dev: true
+
+  /@types/gulp-clean-css/4.3.0:
+    resolution: {integrity: sha512-aRV2BvZA+X/SdgONQW4OkIzInYhvSqeUCiLfwc3VCD0/pxQT9xAadwHmtYGF2kc66cD4uSPmE+s4JYFvhHLaUA==}
+    dependencies:
+      '@types/clean-css': 4.2.6
       '@types/node': 18.7.23
     dev: true
 
@@ -245,6 +265,12 @@ packages:
 
   /@types/node/18.7.23:
     resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
+    dev: true
+
+  /@types/sass/1.43.1:
+    resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
+    dependencies:
+      '@types/node': 18.7.23
     dev: true
 
   /@types/undertaker-registry/1.0.1:
@@ -793,6 +819,13 @@ packages:
       define-property: 0.2.5
       isobject: 3.0.1
       static-extend: 0.1.2
+    dev: true
+
+  /clean-css/4.2.3:
+    resolution: {integrity: sha512-VcMWDN54ZN/DS+g58HYL5/n4Zrqe8vHJpGA8KdgUXFU4fuP/aHNw8eld9SyEIyabIMJX/0RaY/fplOo5hYLSFA==}
+    engines: {node: '>= 4.0'}
+    dependencies:
+      source-map: 0.6.1
     dev: true
 
   /cliui/3.2.0:
@@ -1646,6 +1679,15 @@ packages:
       plugin-error: 1.0.1
       postcss: 8.4.17
       through2: 4.0.2
+      vinyl-sourcemaps-apply: 0.2.1
+    dev: true
+
+  /gulp-clean-css/4.3.0:
+    resolution: {integrity: sha512-mGyeT3qqFXTy61j0zOIciS4MkYziF2U594t2Vs9rUnpkEHqfu6aDITMp8xOvZcvdX61Uz3y1mVERRYmjzQF5fg==}
+    dependencies:
+      clean-css: 4.2.3
+      plugin-error: 1.0.1
+      through2: 3.0.1
       vinyl-sourcemaps-apply: 0.2.1
     dev: true
 
@@ -3060,6 +3102,12 @@ packages:
     dependencies:
       readable-stream: 2.3.7
       xtend: 4.0.2
+    dev: true
+
+  /through2/3.0.1:
+    resolution: {integrity: sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==}
+    dependencies:
+      readable-stream: 3.6.0
     dev: true
 
   /through2/4.0.2:

@@ -7,5 +7,9 @@
     "build": "vite build"
   },
   "author": "choreau",
-  "license": "MIT"
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "@simple/utils": "workspace:^0.0.1"
+  }
 }

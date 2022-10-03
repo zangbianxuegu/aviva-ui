@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  // import { SIcon, SButton } from '@simple/components'
 import { BagAdd } from "@vicons/ionicons5";
 </script>
 

@@ -19,9 +19,12 @@
   "devDependencies": {
     "@types/gulp": "^4.0.9",
     "@types/gulp-autoprefixer": "^0.0.33",
+    "@types/gulp-clean-css": "^4.3.0",
     "@types/gulp-sass": "^5.0.0",
+    "@types/sass": "^1.43.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.55.0",
     "sucrase": "^3.27.0",
